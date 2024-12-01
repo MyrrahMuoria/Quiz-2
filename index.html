@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Web Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <h1>Basic Quiz</h1>
+
+      <div id="timer">15</div>
+
+      <div id="quiz-area">
+        <div id="question-container">
+          <h2 id="question">Question text will appear here</h2>
+          <ul id="answer-options">
+            <!-- Answer options will be dynamically inserted here -->
+          </ul>
+        </div>
+
+        <div id="controls">
+          <button id="submit-btn" disabled>Submit</button>
+          <button id="next-btn" disabled>Next</button>
+        </div>
+      </div>
+
+      <div id="score-area" class="hidden">
+        <h2>Your Score: <span id="score"></span></h2>
+        <p id="feedback"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
